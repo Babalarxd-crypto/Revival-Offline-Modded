@@ -1,0 +1,42 @@
+REVIVAL OFFLINE - TEMIZ UYGULAMA DAGITIMI
+Revival-Offline.exe ile acin. Tum klasoru birlikte tasiyin.
+Oyun dahil degil; Kurulu oyunu sec ile kendi BinaryTrU.exe dosyanizi gosterin.
+Python kurulumu gerekmez. Windows .NET Framework4 gereklidir.
+
+ILK KURULUM (DENEYSEL): Bu PC icin offline veri hazirla dugmesine basin.
+Once normal launcheri acin ama OYNA'ya basmayin. Kurulu BinaryTrU.exe
+dosyanizi secin. Gozlemci hazir mesaji sonrasi normal launcherda OYNA'ya basin.
+Oyun, gozlemci kurulana kadar baslangicta bekletilir, sonra devam ettirilir.
+Surum yerel normal launcher logu ve resmi HTTPS manifestinden okunur.
+Hazirlik sirasinda internet gereklidir; oyun dosyasi veya hesap bileti indirilmez.
+Kurulu EXE/DLL hashleri manifestle karsilastirilir; sabit eski DLL listesi yoktur.
+Surum bilgisi okunamazsa veya giris kaydi eksikse dosya olusturulmaz.
+Kayit TCP baglantilarini localhost aktaricisindan gecirir; asil hedef
+oyunun connect cagrisindan alinir. Paket/anahtar baytlari degistirilmez.
+Kaydi bitirmek aktarici baglantilarini kapatir, oyun sunucudan ayrilabilir.
+Arac satin alma yapmaz, oyun islemini kapatmaz.
+game.log bu kullanicinin giris kaydindan, offline_launch_candidate.json
+localhost sentetik kimlikten olusur. Baskasinin dosyalarini kullanmayin.
+Mevcut yerel verilerin uzerine yazilmaz.
+
+ONEMLI: BU PAKET TEK BASINA MAC BASLATMAZ.
+Kisisel capture kayitlari ve oturum verileri pakette yoktur.
+Normal kadro kaydet dugmesi sadece lobi/kadro verisi toplar.
+Bu PC icin offline veri hazirla: anahtar degistirilmeden gozlemlenir;
+lobi, kanal ve 18020-18029 mac trafigi kaydedilir. Kendi antrenman macinizi
+baslatin, devre arasini da kaydedin, sonra kaydi bitirin. Kayit paneli
+oyunu acmaz/kapatmaz veya satin alma yapmaz. Farkli kanal anahtarlari
+yalnizca yeni offline disk kopyasinda donusturulur; asil kayit korunur.
+Callback/IOCP tampon gozlemi hazirlik kaydinda kullanilmaz; TCP aktaricisi
+akis baytlarini kaydeder. Ayni-port yeniden baglantilar birlestirilmez.
+Eski anahtarsiz log sonradan anahtar eklenerek onarilamaz.
+Yeni kaydediciyle gercek giris -> offline mac testi HENUZ GECMEDI.
+Bu klasor yayin oncesi test adayidir; hatasiz yayin surumu degildir.
+Arayuz/kart katalogu kullanilabilir; oyun surumu uyumu garanti edilmez.
+
+KAYIT VE GIZLILIK
+Normal oyun kaydi surec gozlemi (Frida) kullanir. Oyun kurallari izin
+vermiyorsa kullanmayin. Guvenlik yazilimlarini kapatmayin.
+Sonradan olusan capture/log dosyalari hesap, sohbet ve oturum bilgisi
+icerebilir. Kullandiginiz klasoru yeniden oldugu gibi paylasmayin.
+Uygulama dosyalari imzasizdir; Windows uyari gosterebilir.
